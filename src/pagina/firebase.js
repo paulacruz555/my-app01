@@ -1,6 +1,5 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
 
 import { getAuth } from "firebase/auth";
 import {getFirestore } from "firebase/firestore";
@@ -10,20 +9,17 @@ import {getStorage} from "firebase/storage";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyBkvPoDB19M4lZS-XauWupd-1pRriooWPU",
-  authDomain: "sandra-f515e.firebaseapp.com",
-  projectId: "sandra-f515e",
-  storageBucket: "sandra-f515e.appspot.com",
-  messagingSenderId: "42711673204",
-  appId: "1:42711673204:web:4a4a05320b161b1a992421",
-  measurementId: "G-LRY48K5L8R"
+  apiKey: "AIzaSyCkawwmC-vWjZReaVSc2yhEUb_Yk6yZmpg",
+  authDomain: "appreact-be5a3.firebaseapp.com",
+  projectId: "appreact-be5a3",
+  storageBucket: "appreact-be5a3.appspot.com",
+  messagingSenderId: "542380031367",
+  appId: "1:542380031367:web:90466b1173774b3801a722"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
 
 export const auth = getAuth(app);
 export const db = getFirestore(app);  
